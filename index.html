@@ -1,99 +1,179 @@
-<!-- Figma link: https://www.figma.com/file/u4CIOeWh2RINueISiXfqvQ/Dreamworksbnb-Copy?node-id=0%3A1 -->
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dreamworksbnb</title>
+	<title>DREAMWORKSBNB</title>
 	<!-- CSS connection -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- Link to Google Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
+	<!-- Bootstrap JS Link -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Bootstrap for Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div id="topBanner">
-		<img id="banner" src="homepage_banner2.jpeg">
-		<img id="logo" src="homepage_logo.png">
-		<h1>The<br>Greatest<br>Outdoors</h1>
-		<h2>Get Inspired</h2>
-		<div id="login">
-			<img class="icon" src="user.png">
-			<img class="icon" src="menu.png">
+	<!-- bootstrap nav bar  -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">DREAMWORKSBNB</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Contact</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Featured Hosts
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">The Croods</a></li>
+							<li><a class="dropdown-item" href="#">Trolls: Poppy</a></li>
+							<li><a class="dropdown-item" href="#">Shrek</a></li>
+							<li><a class="dropdown-item" href="#">Kung Fu Panda: Po</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Hiccup and Toothless</a></li>
+							<li><a class="dropdown-item" href="#">Li and Everest</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Experiences</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-secondary" type="submit">Search</button>
+				</form>
+			</div>
 		</div>
-	</div>
+	</nav>
 
-	<h2>Live anywhere</h2>
+	<img id="banner" src="homepage_banner1.jpg">
+
 	<div class="container">
-		<div>
-			<img class="place" src="homepage_croods.jpeg">
-			<p>The Crood's Treehouse</p>
-		</div>
-		<div>		
-			<img class="place" src="homepage_trolls.jpeg">
-			<p>Trolls' Village</p>
-		</div>
-		<div>
-			<img class="place" src="homepage_shrek.jpeg">
-			<p>Shrek's Swamp</p>
+		<div class="row d-flex justify-content-center">
+			<div class="col">
+				<p id="description">The Croods is a pack who had been living in a cave for many many years. Not until recently, they left and found a new place that they can call it home, the treehouse. Grug Crood is the leader and the father, Ugga Crood is the mother and Eep, Thunk and Sandy are their children. <br> <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
 		</div>
 	</div>
 
-	<div id="middleBanner">
-		<img id="banner2" src="homepage_croods3.jpeg">	
-		<div id="bannerText">
-			<h3>Become a Host</h3>
-			<br>
-			<h4>Earn extra income<br>and share your space</h4>
-			<br>
-			<p>Learn More</p>
-		</div>
-	</div>
+	<p class="heading">Tour Around Treehouse with...</p>
 
-	<h2>Discover Experiences</h2>
 	<div class="container">
-		<div>
-			<img class="place" src="homepage_abominable.jpeg">
-			<p>Learn how to play violin <br> with Yi and Everest</p>
+		<div class="row d-flex justify-content-center align-items-center">
+			<div class="col-sm-12 col-md-4">
+				<img class="character" src="homepage_grug.png">
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<div class="row d-flex align-items-center">
+					<p>Grug Crood</p>
+					<p>The over-protective team leader of the Crood always look after of his pack. The strong man never allows them to leave the cave so that they can be kept away from the monstrous creatures outside. This rule has existed for many many years as it was passed a long from his parents.</p>
+					<p>HKD2,500/day</p>
+				</div>
+				<div class="row">
+					<button type="button" class="btn btn-outline-secondary">BOOK NOW</button>
+				</div>
+			</div>
 		</div>
-		<div>
-			<img class="place" src="homepage_toothless.jpeg">
-			<p>Ride with Berk's fastest <br> dragons Toothless & Lightfury</p>
+		<div class="row d-flex justify-content-center align-items-center">
+			<div class="col-sm-12 col-md-4">
+				<img class="character" src="homepage_ugga.jpg">
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<div class="row d-flex align-items-center">
+					<p>Ugga Crood</p>
+					<p>The wife and mother makes most decision for the family. Unlike his husband, Ugga has a more modern perspective in raising children but still, she takes care of everyone in terms of every aspect of their daily life. The kind and caring mother will do everything to protect her children, to keep them save and healthy.</p>
+					<p>HKD1000/day</p>
+				</div>
+				<div class="row">
+					<button type="button" class="btn btn-outline-secondary">BOOK NOW</button>
+				</div>
+			</div>
 		</div>
-		<div>
-			<img class="place" src="homepage_croods2.jpeg">
-			<p>Hunt for food with the <br> Croods Family</p>
+		<div class="row d-flex justify-content-center align-items-center">
+			<div class="col-sm-12 col-md-4">
+				<img class="character" src="homepage_eep.jpg">
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<div class="row d-flex align-items-center">
+					<p>Eep Crood</p>
+					<p>The young and rebellious woman would like to see the world outside the cave and cannot be contained in an area. Scars and adventures build her own story. Fire is her favourite too. Therefore, she does not agree with his father's rule and "scary" stories and it often brings surprises and troubles to the peaceful family.</p>
+					<p>HKD800/day</p>
+				</div>
+				<div class="row">
+					<button type="button" class="btn btn-outline-secondary">BOOK NOW</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<h2>Inspiration for future getaways</h2>
+	<!-- carousel -->
 	<div class="container">
-		<div>
-			<!-- KP - HTML Syntax (II) -->
-			<!-- unordered lists -->
-			<ul>
-				<li><b>Shrek</b> <br> Far Far Away</li>
-				<li><b>Boss Baby</b> <br> Baby Corp</li>
-				<li><b>Madagascar</b> <br> Central Park Zoo</li>
-				<li><b>Trolls</b> <br> Bergen Town</li>
-			</ul>
-		</div>
-		<div>
-			<!-- ordered lists -->
-			<ol>
-				<li><b>Kung Fu Panda</b> <br> Guangxi, China</li>
-				<li><b>The Croods</b> <br> Cave</li>
-				<li><b>Megamind</b> <br> Metro City</li>
-				<li><b>Turbo</b> <br> San Fernando Valley</li>
-			</ol>
-		</div>
-		<div>
-			<ol>
-				<li><b>Abominable</b> <br> Mount Everest</li>
-				<li><b>Bee</b> <br> Central Park</li>
-				<li><b>Puss in Boots</b> <br> Bangalore</li>
-				<li><b>Monsters vs. Aliens</b> <br> California</li>
-			</ol>
+		<div class="row">
+			<div class="col">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block" src="homepage_carousel.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block" src="homepage_carousel2.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block" src="homepage_carousel3.jpg">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<!-- spinner --> 
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- spinner --> 
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- spinner --> 
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>
